@@ -1,0 +1,61 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.accordion {
+  background-color: #219ebc;
+  color: #fff;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 15px 15px 0 0;
+  text-align: left;
+  font-size: 15px;
+  transition: 0.4s;
+}
+.active, .accordion:hover {
+  background-color: #58b4d1;
+}
+.panel {
+  padding: 18px;
+  display: none;
+  background-color: #fff;
+  overflow: hidden;
+}
+.card{
+  text-align: center;
+  margin: 1rem 0;
+  border: 2px solid #ccc;
+  border-radius: 15px 15px 0 0;
+}
+.container{
+  margin: auto;
+  width: 65vw;
+}
+.Pokemon{
+  display: flex;
+  justify-content: space-around;
+}
+.Pokemon img {
+  width: 50%;
+  margin: auto;
+}
+.Pokemon p {
+  padding: 10px;
+  margin: auto;
+}
+
+@media (max-width: 1050px) {
+  .container{
+    width: 100vw;
+  }
+  .Pokemon{
+    flex-direction: column;
+  }
+  .card{
+    width: 80%;
+    margin: 1rem auto;
+  }
+}
